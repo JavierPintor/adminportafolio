@@ -18,6 +18,5 @@ protected/config/data.php
 .idea
 includes/files/*
 includes/pdfs/*
-vendor
 doc/*
 .vscode/
