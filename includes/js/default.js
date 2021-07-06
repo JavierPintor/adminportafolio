@@ -24,6 +24,19 @@
 
   }
 
+  function imgBtncourse(id, action, ruta, frm) {
+    try{
+        
+      var path = $("#path").val();
+   
+      $("#idReg").val(id);
+      $("#Action").val(action);
+      $("#" + frm).attr('action', path + ruta);
+      $("#" + frm).submit();
+    }catch(e){alert(e);}
+
+  }
+
   $(".cmdDesplegarChange").click(function () {
     var dataTableID = $(this).attr("data-tableid");
     var path = $("#path").val();
