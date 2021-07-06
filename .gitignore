@@ -13,12 +13,9 @@ docs/*
 *.m4v
 *.mp4
 ._*
-design/*
 protected/config/data.php
 .idea
 includes/files/*
 includes/pdfs/*
-vendor/*
-vendor
 doc/*
 .vscode/
