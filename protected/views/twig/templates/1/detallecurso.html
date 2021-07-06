@@ -26,8 +26,8 @@
                         </figure>
                         <div class="post-details">
                             <div class="post-meta">
-                                by <a href="#" class="post-author">John Doe</a>
-                                on <a href="#" class="post-date">{{detalles.fecha}}</a>
+                                by <a href="{{ pathSite }}" class="post-author">{{detalles.name}}</a>
+                                on <a href="#" class="post-date">{{detalles.date2}}</a>
                                 | <a href="#" class="post-comment"><span>2</span> Comments</a>
                             </div>
                             <h4 class="post-title">
@@ -102,17 +102,16 @@
                                         class="author-header d-flex justify-content-between align-items-center">
                                         <div>
                                             <span class="author-title">AUTHOR</span>
-                                            <h4 class="author-name font-weight-bold mb-0">John Doe</h4>
+                                            <h4 class="author-name font-weight-bold mb-0">{{detalles.name}}</h4>
                                         </div>
                                         <div>
-                                            <a href="#" class="author-link font-weight-semi-bold">View all posts
-                                                by John Doe <i class="d-icon-arrow-right"></i></a>
+                                            <a href="#" class="author-link font-weight-semi-bold">Ver todos los posts de&nbsp;{{detalles.name}}
+                                                 <i class="d-icon-arrow-right"></i>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="author-content">
-                                        <p class="mb-0">Praesent dapibus, neque id cursus faucibus, tortor neque
-                                            egestas auguae, eu vulputate magna eros euerat. Aliquam erat
-                                            volutpat.</p>
+                                        <p class="mb-0">{{detalles.caracteristicas}}</p>
                                     </div>
                                 </div>
                             </div>

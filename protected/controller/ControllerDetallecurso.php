@@ -17,8 +17,9 @@ class ControllerDetallecurso extends Controller {
         $idReg = $dd[1];
 
         //--> Detaalles de articulos
-        $sql="SELECT cs.*, ct.categorias FROM cursos AS cs  
-        INNER JOIN categorias AS ct ON ct.id=cs.id_categorias  WHERE cs.id=$idReg ORDER by cs.fecha DESC";
+        $sql='SELECT cs.*, ct.categorias, DATE_FORMAT(cs.fecha, "%b %e, %Y") AS date2,u.name,u.id AS idUser ,u.caracteristicas FROM cursos AS cs 
+        INNER JOIN categorias AS ct ON ct.id=cs.id_categorias 
+        INNER JOIN user AS u ON u.id=cs.id_user WHERE cs.id='.$idReg.' ORDER by cs.fecha DESC';
         $this->data["detalles"] = indexModel::bd($this->conf)->getSQL($sql)[0];
       
 
